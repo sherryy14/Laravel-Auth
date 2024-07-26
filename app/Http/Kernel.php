@@ -35,6 +35,7 @@ class Kernel extends HttpKernel
             VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             PreventBackHistory::class, // Add your custom middleware here
+            \App\Http\Middleware\ShareCartData::class,
         ],
 
         'api' => [
